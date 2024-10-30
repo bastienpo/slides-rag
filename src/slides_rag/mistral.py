@@ -10,7 +10,7 @@ from mistralai.utils import BackoffStrategy, RetryConfig
 class MistralLM(dspy.LM):
     def __init__(
         self: "MistralLM",
-        model: Literal["pixtral-12b-2409"],
+        model: Literal["pixtral-12b-2409", "ministral-3b-2410"],
         api_key: str | None = None,
         temperature: float = 0.0,
         max_tokens: int = 1024,
